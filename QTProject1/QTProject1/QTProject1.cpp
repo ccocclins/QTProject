@@ -1,21 +1,21 @@
 #include "QTProject1.h"
 
-QTProject1::QTProject1(QWidget *parent): QMainWindow(parent)
+QTProject1::QTProject1(QWidget* parent) : QMainWindow(parent)
 {
-    ui.setupUi(this);
+  ui.setupUi(this);
 
-    this->setWindowFlag(Qt::FramelessWindowHint);             //取消显示窗口边框
+  this->setWindowFlag(Qt::FramelessWindowHint);             //取消显示窗口边框
 
 
-    QGraphicsDropShadowEffect* shadow = new QGraphicsDropShadowEffect();
+  QGraphicsDropShadowEffect* shadow = new QGraphicsDropShadowEffect();
 
-    shadow->setBlurRadius(40);                                //子窗体的阴影设置
-    shadow->setColor(Qt::black);
-    shadow->setOffset(0);
+  shadow->setBlurRadius(40);                                //子窗体的阴影设置
+  shadow->setColor(Qt::black);
+  shadow->setOffset(0);
 
-    ui.shadowWidget->setGraphicsEffect(shadow);
+  ui.shadowWidget->setGraphicsEffect(shadow);
 
-    this->setAttribute(Qt::WA_TranslucentBackground);         //主窗口设置为透明
+  this->setAttribute(Qt::WA_TranslucentBackground);         //主窗口设置为透明
 
 }
 
@@ -23,7 +23,7 @@ QTProject1::~QTProject1()
 {
 
 }
- 
+
 //自定义鼠标移动功能
 void QTProject1::mouseMoveEvent(QMouseEvent* event)
 {
