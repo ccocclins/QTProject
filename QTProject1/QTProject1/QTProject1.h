@@ -5,12 +5,12 @@
 
 class QTProject1 : public QMainWindow
 {
-    Q_OBJECT
+  Q_OBJECT
 
 public:
-    QTProject1(QWidget *parent = nullptr);
-    ~QTProject1();
+  QTProject1(QWidget* parent = nullptr);
+  ~QTProject1();
 
 private:
-    Ui::QTProject1Class ui;
+  Ui::QTProject1Class ui;
 };
